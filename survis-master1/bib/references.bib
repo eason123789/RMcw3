@@ -1,0 +1,138 @@
+
+@INPROCEEDINGS{9391844,
+abstract = {Abstract—Transformer has been widely used in the field of natural language processing (NLP) with its superior ability to handle long-range dependencies in comparison with convolutional neural network (CNN) and recurrent neural network (RNN). This correlation is also important for the recognition of time series signals, such as electroencephalogram (EEG). Currently, commonly used EEG classification models are CNN, RNN, deep believe network (DBN), and hybrid CNN. Transformer has not been used in EEG recognition. In this study, we constructed multiple Transformer-based models for motor imaginary (MI) EEG classification, and obtained superior performances in comparison with the previous state-of-art. We found that the activities of the motor cortex had a great contribution to classification in our model through visualization, and positional embedding (PE) method could improve classification accuracy. These results suggest that the attention mechanism of Transformer combined with CNN might be a powerful model for the recognition of sequence data.
+},
+  author={Sun, Jiayao and Xie, Jin and Zhou, Huihui},
+  booktitle={2021 IEEE 3rd Global Conference on Life Sciences and Technologies (LifeTech)}, 
+  title={EEG Classification with Transformer-Based Models}, 
+  year={2021},
+  keywords = {type:model,EEG, Transformer,CNN,visualization, brain- computer interface},
+  pages={92-93},
+  publisher = {IEEE},
+  doi={10.1109/LifeTech52111.2021.9391844}
+}
+
+@INPROCEEDINGS{NIPS2017_3f5ee243,
+abstract = {The dominant sequence transduction models are based on complex recurrent orconvolutional neural networks in an encoder and decoder configuration. The best performing such models also connect the encoder and decoder through an attentionm echanisms. We propose a novel, simple network architecture based solely onan attention mechanism, dispensing with recurrence and convolutions entirely.Experiments on two machine translation tasks show these models to be superiorin quality while being more parallelizable and requiring significantly less timeto train. Our single model with 165 million parameters, achieves 27.5 BLEU onEnglish-to-German translation, improving over the existing best ensemble result by over 1 BLEU. On English-to-French translation, we outperform the previoussingle state-of-the-art with model by 0.7 BLEU, achieving a BLEU score of 41.1.
+},
+ author = {Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N and Kaiser, \L ukasz and Polosukhin, Illia},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {I. Guyon and U. Von Luxburg and S. Bengio and H. Wallach and R. Fergus and S. Vishwanathan and R. Garnett},
+ publisher = {Curran Associates, Inc.},
+ title = {Attention is All you Need},
+ keywords = {type:model,Self-attention, Transformer,Machine translation,Neural network},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2017/file/3f5ee243547dee91fbd053c1c4a845aa-Paper.pdf},
+ volume = {30},
+ year = {2017}
+}
+
+@INPROCEEDINGS{10063357,
+abstract = {In recent years, with the development of social economy and technology, the brain-computer interface based on motor imagery(MI-BCI) has gradually become the focus content of many re-searchers. However, the motor imagery EEG signal (MI-EEG) itself has the characteristics of non-linearity and low signal-to-noise ratio, and because the characteristics of different domains of MI-EEG cannot be effectively combined, the recognition rate of MI-EEG is unsatisfactory. To overcome the above problems, this paper proposes a Transformer-based one-dimensional convolutional neural network model(CNN-Transformer) for the classification and recognition of four types of motor imagery EEG signals. Firstly, the artifacts of the original EEG are removed and new time-space-frequency features are constructed by preprocessing such as bandpass filtering and PCA dimensionality; then, the local features in the temporal dimension are extracted through the convolution and pooling operations of 1D-CNN, while reducing the dimension of the time feature; next, the Transformer based on the attention mechanism is used to extract more abstract and high-level temporal features from multiple perspectives; finally, the classification results are integrated and output through the fully connected layer. The performance of the CNN-Transformer model is evaluated using the competition dataset 2008 BCI-Competition 2A. The results show that the average accuracy and kappa value of the CNN-Transformer model are as high as 99.29%(±0.07%) and 98.43%(±0.21), respectively, which are 3.72% and 7.68% higher than the classical architecture (CNN-LSTM). This model provides a design idea for improving the accuracy of MI-EEG classification and recognition, and also lays a foundation for the wide application of MI-BCI.
+},
+  author={Liu, Haofeng and Liu, Yuefeng and Wang, Yue and Liu, Bo and Bao, Xiang},
+  booktitle={2022 IEEE International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom)}, 
+  title={EEG classification algorithm of motor imagery based on CNN-Transformer fusion network}, 
+  year={2022},
+  keywords = {type:model,motor imagery,brain-computer interface, deep learning,classification and recognition, convolutional neural network; transformer},
+  pages={1302-1309},
+  doi={10.1109/TrustCom56396.2022.00182}
+}
+
+@INPROCEEDINGS{song2021transformerbased,
+abstract = {At present, people usually use some methods based on convolutional neural networks (CNNs) for Electroencephalograph (EEG) decoding. However, CNNs have limitations in perceiving global dependencies, which is not adequate for common EEG paradigms with a strong overall relationship. Regarding this issue, we propose a novel EEG decoding method that mainly relies on the attention mechanism. The EEG data is firstly preprocessed and spatially filtered. And then, we apply attention transforming on the feature-channel dimension so that the model can enhance more relevant spatial features. The most crucial step is to slice the data in the time dimension for attention transforming, and finally obtain a highly distinguishable representation. At this time, global averaging pooling and a simple fully-connected layer are used to classify different categories of EEG data. Experiments on two public datasets indicate that the strategy of attention transforming effectively utilizes spatial and temporal features. And we have reached the level of the state-of-the-art in multi-classification of EEG, with fewer parameters. As far as we know, it is the first time that a detailed and complete method based on the transformer idea has been proposed in this field. It has good potential to promote the practicality of brain-computer interface (BCI). The source code can be found at: \textit{this https URL}.
+},
+      title={Transformer-based Spatial-Temporal Feature Learning for EEG Decoding}, 
+      author={Yonghao Song and Xueyu Jia and Lie Yang and Longhan Xie},
+      year={2021},
+      eprint={2106.11170},
+      archivePrefix={arXiv},
+      keywords = {type:model,Electroencephalograph (EEG), attention, trans- former, brain-computer interface (BCI), motor imagery (MI)},
+      primaryClass={eess.SP}
+}
+@INPROCEEDINGS{article,
+abstract = {Motor imagery (MI) tasks-based brain–computer interface (BCI) system finds applications for disabled people to communicate with surrounding. The BCI system reliability is relied on how well the different MI tasks are assessed and identified. Electroencephalogram (EEG) recordings provide a noninvasive way for imaging of MI tasks in BCI system. In this framework, tunable-Q wavelet transform (TQWT)-based feature extraction method is proposed for the classification of different MI tasks EEG signals. The TQWT parameters are tuned for the decomposition of EEG signal into sub-bands. Time domain measures of sub-bands are considered as features for MI tasks EEG signals. The TQWT-based features are tested on least-squares support vector machine classifier for the classification of right-hand and right-foot MI tasks. The proposed method provides 96.89% MI tasks classification accuracy, which is the highest as compared to other existing same data set methods. The suggested method can be used for identification of MI tasks in a BCI system designed for controlling robotic arm and wheel chairs, etc.
+},
+author = {Taran, Sachin and Bajaj, Varun},
+year = {2019},
+month = {11},
+title = {Motor imagery tasks-based EEG signals classification using tunable-Q wavelet transform},
+volume = {31},
+journal = {Neural Computing and Applications},
+keywords = {type:model,Electroencephalogram (EEG) signal, Brain–computer interface system , Tunable-Q wavelet transform , Least-squares support vector machine}
+doi = {10.1007/s00521-018-3531-0}
+}
+
+@INPROCEEDINGS{JournalofNeuralEngineering,
+abstract = {Objective. Electroencephalography (EEG) analysis has been an important tool in neuroscience with applications in neuroscience, neural engineering (e.g. Brain–computer interfaces, BCI’s), and even commercial applications. Many of the analytical tools used in EEG studies have used machine learning to uncover relevant information for neural classification and neuroimaging. Recently, the availability of large EEG data sets and advances in machine learning have both led to the deployment of deep learning architectures, especially in the analysis of EEG signals and in understanding the information it may contain for brain functionality. The
+robust automatic classification of these signals is an important step towards making the use of EEG more practical in many applications and less reliant on trained professionals. Towards this goal, a systematic review of the literature on deep learning applications to EEG classification was performed to address the following critical questions: (1) Which EEG classification tasks have been explored with deep learning? (2) What input formulations have been used for training the deep networks? (3) Are there specific deep learning network structures suitable for specific types of tasks? Approach. A systematic literature review of EEG classification using deep learning was performed on Web of Science and PubMed databases, resulting in 90 identified studies. Those studies were analyzed based on type of task, EEG preprocessing methods, input type, and deep learning architecture. Main results. For EEG classification tasks, convolutional neural networks, recurrent neural networks, deep belief networks outperform stacked auto-encoders and multi-layer perceptron neural networks in classification accuracy. The tasks that used deep learning fell into five general groups: emotion recognition, motor imagery, mental workload, seizure detection, event related potential detection, and sleep scoring. For each type of task, we describe the specific input formulation, major characteristics, and end classifier recommendations found through this review. Significance. This review summarizes the current practices and performance outcomes in the use of deep learning for EEG classification. Practical suggestions on the selection of many hyperparameters are provided in the hope that they will promote or guide the deployment of deep learning to EEG datasets in future research.
+},
+author = {Craik, Alexander and He, Yongtian and Contreras-Vidal, José},
+year = {2019},
+month = {02},
+keywords = {type:review,deep learning, electroencephalogram (EEG), classification, convolutional neural
+networks, deep belief networks, multi-layer perceptron neural networks, stacked auto-encoders}
+title = {Deep learning for Electroencephalogram (EEG) classification tasks: A review},
+volume = {16},
+journal = {Journal of Neural Engineering},
+doi = {10.1088/1741-2552/ab0ab5}
+}
+
+
+@INPROCEEDINGS{9845479,
+abstract = {The attention mechanism of the Transformer has the advantage of extracting feature correlation in the long-sequence data and visualizing the model. As time-series data, the spatial and temporal dependencies of the EEG signals between the time points and the different channels contain important information for accurate classification. So far, Transformer-based approaches have not been widely explored in motor-imagery EEG classification and visualization, especially lacking general models based on cross-individual validation. Taking advantage of the Transformer model and the spatial-temporal characteristics of the EEG signals, we designed Transformer-based models for classifications of motor imagery EEG based on the PhysioNet dataset. With 3s EEG data, our models obtained the best classification accuracy of 83.31%, 74.44%, and 64.22% on two-, three-, and four-class motor-imagery tasks in cross-individual validation, which outperformed other state-of-the-art models by 0.88%, 2.11%, and 1.06%. The inclusion of the positional embedding modules in the Transformer could improve the EEG classification performance. Furthermore, the visualization results of attention weights provided insights into the working mechanism of the Transformer-based networks during motor imagery tasks. The topography of the attention weights revealed a pattern of event-related desynchronization (ERD) which was consistent with the results from the spectral analysis of Mu and beta rhythm over the sensorimotor areas. Together, our deep learning methods not only provide novel and powerful tools for classifying and understanding EEG data but also have broad applications for brain-computer interface (BCI) systems.
+},
+  author={Xie, Jin and Zhang, Jie and Sun, Jiayao and Ma, Zheng and Qin, Liuni and Li, Guanglin and Zhou, Huihui and Zhan, Yang},
+  journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering}, 
+  title={A Transformer-Based Approach Combining Deep Learning Network and Spatial-Temporal Information for Raw EEG Classification}, 
+  year={2022},
+  volume={30},
+  keywords = {type:model,Motor imagery (MI), EEG classification, Transformer, Attention mechanism, CNN, Visualization, Brain- computer interface (BCI)}
+  pages={2126-2136},
+  doi={10.1109/TNSRE.2022.3194600}
+}
+
+@INPROCEEDINGS{Beck2016Visual,
+abstract = {Bibiographic data such as collections of scientific articles and citation networks have been studied extensively in information visualization and visual analytics research. Powerful systems have been built to support various types of bibliographic analysis, but they require some training and cannot be used to disseminate the insights gained. In contrast, we focused on developing a more accessible visual analytics system, called SurVis, that is ready to disseminate a carefully surveyed literature collection. The authors of a survey may use our Web-based system to structure and analyze their literature database. Later, readers of the survey can obtain an overview, quickly retrieve specific publications, and reproduce or extend the original bibliographic analysis. Our system employs a set of selectors that enable users to filter and browse the literature collection as well as to control interactive visualizations. The versatile selector concept includes selectors for textual search, filtering by keywords and meta-information, selection and clustering of similar publications, and following citation links. Agreement to the selector is represented by word-sized sparkline visualizations seamlessly integrated into the user interface. Based on an analysis of the analytical reasoning process, we derived requirements for the system. We developed the system in a formative way involving other researchers writing literature surveys. A questionnaire study with 14 visual analytics experts confirms that SurVis meets the initially formulated requirements.},
+  author = {Beck, Fabian and Koch, Sebastian and Weiskopf, Daniel},
+  doi = {10.1109/TVCG.2015.2467757},
+  journal = {IEEE Transactions on Visualization and Computer Graphics},
+  keywords = {type:system, visual_analytics, sparklines, information_retrieval, clustering, literature_browser},
+  number = {01},
+  publisher = {IEEE},
+  volume = {22},
+  series = {TVCG},
+  title = {Visual Analysis and Dissemination of Scientific Literature Collections with {SurVis}},
+  url = {http://www.visus.uni-stuttgart.de/uploads/tx_vispublications/vast15-survis.pdf},
+  year = {2016}
+}
+
+@INPROCEEDINGS{kostas2021bendr,
+abstract = {Deep neural networks (DNNs) used for brain-computer-interface (BCI) classification are commonly expected to learn general features when trained across a variety of contexts, such that these features could be fine-tuned to specific contexts. While some success is found in such an approach, we suggest that this interpretation is limited and an alternative would better leverage the newly (publicly) available massive EEG datasets. We consider how to adapt techniques and architectures used for language modelling (LM), that appear capable of ingesting awesome amounts of data, towards the development of encephalography modelling (EM) with DNNs in the same vein. We specifically adapt an approach effectively used for automatic speech recognition, which similarly (to LMs) uses a self-supervised training objective to learn compressed representations of raw data signals. After adaptation to EEG, we find that a single pre-trained model is capable of modelling completely novel raw EEG sequences recorded with differing hardware, and different subjects performing different tasks. Furthermore, both the internal representations of this model and the entire architecture can be fine-tuned to a variety of downstream BCI and EEG classification tasks, outperforming prior work in more task-specific (sleep stage classification) self-supervision.},	
+      title={BENDR: using transformers and a contrastive self-supervised learning task to learn from massive amounts of EEG data}, 
+      author={Demetres Kostas and Stephane Aroca-Ouellette and Frank Rudzicz},
+      year={2021},
+      keywords = {type:mdoel, Deep neural networks, EEG, encephalography modelling},
+      eprint={2101.12037},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+@INPROCEEDINGS{siddhad2022efficacy,
+abstract = {With the unprecedented success of transformer networks in natural language processing (NLP), recently, they have been successfully adapted to areas like computer vision, generative adversarial networks (GAN), and reinforcement learning. Classifying electroencephalogram (EEG) data has been challenging and researchers have been overly dependent on pre-processing and hand-crafted feature extraction. Despite having achieved automated feature extraction in several other domains, deep learning has not yet been accomplished for EEG. In this paper, the efficacy of the transformer network for the classification of raw EEG data (cleaned and pre-processed) is explored. The performance of transformer networks was evaluated on a local (age and gender data) and a public dataset (STEW). First, a classifier using a transformer network is built to classify the age and gender of a person with raw resting-state EEG data. Second, the classifier is tuned for mental workload classification with open access raw multi-tasking mental workload EEG data (STEW). The network achieves an accuracy comparable to state-of-the-art accuracy on both the local (Age and Gender dataset; 94.53% (gender) and 87.79% (age)) and the public (STEW dataset; 95.28% (two workload levels) and 88.72% (three workload levels)) dataset. The accuracy values have been achieved using raw EEG data without feature extraction. Results indicate that the transformer-based deep learning models can successfully abate the need for heavy feature-extraction of EEG data for successful classification.},
+      keywords = {type:mdoel, Age and Gender , Classification ,Deep learning , EEG ,Mental workload , Transformer network},
+      title={Efficacy of Transformer Networks for Classification of Raw EEG Data}, 
+      author={Gourav Siddhad and Anmol Gupta and Debi Prosad Dogra and Partha Pratim Roy},
+      year={2022},
+      eprint={2202.05170},
+      archivePrefix={arXiv},
+      primaryClass={eess.SP}
+}
+@INPROCEEDINGS{Wang2018LSTMBasedEC,
+abstract = {Classification of motor imagery electroencephalograph signals is a fundamental problem in brain–computer interface (BCI) systems. We propose in this paper a classification framework based on long short-term memory (LSTM) networks. To achieve robust classification, a one dimension-aggregate approximation (1d-AX) is employed to extract effective signal representation for LSTM networks. Inspired by classical common spatial pattern, channel weighting technique is further deployed to enhance the effectiveness of the proposed classification framework. Public BCI competition data are used for the evaluation of the proposed feature extraction and classification network, whose performance is also compared with that of the state-of-the-arts approaches based on other deep networks.},
+  keywords = {type:mdoel, Electroencephalograph (EEG), long short-term memory (LSTM), motor imagery, one dimension-aggregate approximation (1d-AX},
+  title={LSTM-Based EEG Classification in Motor Imagery Tasks},
+  author={Ping Wang and Aimin Jiang and Xiaofeng Liu and Jing Shang and Li Zhang},
+  journal={IEEE Transactions on Neural Systems and Rehabilitation Engineering},
+  year={2018},
+  volume={26},
+  pages={2086-2095}
+}
